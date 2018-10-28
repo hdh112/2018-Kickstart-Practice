@@ -2,7 +2,7 @@
 
 # Read input file
 file_in = open("A-small-practice.in", "r")
-file_out = open("A-small-practice.out", "w")
+file_out = open("A-small-practice-out.txt", "w")
 
 # Test cases
 T = int(file_in.readline().rstrip())
@@ -31,3 +31,6 @@ for test_case in range(T):
             y_prev = A[y]
         x_prev = A[x]
     file_out.write("Case #" + str(test_case+1) + ": " + str(len(triplets)) + "\n")
+
+file_in.close()
+file_out.close()
